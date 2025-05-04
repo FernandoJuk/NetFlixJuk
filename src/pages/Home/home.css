@@ -1,0 +1,84 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.lista-filmes {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os filmes quebrem linha em telas menores */
+  gap: 20px; /* Espaço entre os filmes */
+  max-width: 100%; /* Ajuste conforme a largura do layout desejado */
+  padding-top: 30px; /* Espaço superior */
+  margin:  auto; /* Centraliza horizontalmente e adiciona margem vertical */
+  justify-content: center; /* Centraliza os itens no eixo principal */
+}
+.title{
+  padding-top: 10px;
+  color: #ffffff;
+  height: 50px;
+}
+.lista-filmes article {
+  width: 300px;
+  background-color: #000000;
+  padding: 5px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lista-filmes strong{
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 22px;
+  display: block;
+}
+
+.lista-filmes img {
+  width: 100%;
+  height: 400px; /* ou outro valor fixo que funcione bem para você */
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.lista-filmes a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 24px;
+  background-color: #116FEB;
+  text-decoration: none;
+  color: #FFF;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.container{
+    background-color: #0e0f11;
+}
+
+@media (max-width: 768px) {
+  .lista-filmes {
+    gap: 10px; /* Um espaçamento menor pra telas pequenas */
+  }
+
+  .lista-filmes article {
+    width: calc(50% - 10px); /* Divide em 2 cards por linha com espaçamento */
+  }
+
+  .lista-filmes img {
+    height: 250px; /* Ajusta a altura da imagem pro celular */
+  }
+
+  .lista-filmes a {
+    font-size: 18px; /* Botão um pouco menor */
+    padding: 8px 0;
+  }
+
+  .lista-filmes strong {
+    font-size: 18px;
+  }
+}

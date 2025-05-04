@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .bloco {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0f11;
+    padding: 40px 20px;
+    min-height: 100vh;
+    color: aliceblue;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .input-filme {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .botao {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .movie-card {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .movie-card h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  

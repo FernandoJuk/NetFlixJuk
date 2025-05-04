@@ -1,0 +1,17 @@
+*{ /* reset css*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: sans-serif;
+}
+
+.app{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /*um item abaixo do outro pois por padrão ele e row um ao lado do outro */
+}
