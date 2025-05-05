@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header(){
     return(
-        <header>
+        <header className='header'>
             <Link className="logo" to="/">NETFLIX_JUK </Link>
             <div className="mennu">
             <Link className="favoritos" to="/favoritos">Meus Filmes </Link>
